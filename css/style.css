@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+:root{
+    --primary: #FFB6B9;
+    --primary-darken: rgb(165, 118, 119);
+    --secondary: rgb(190, 189, 189);
+    --base: #222831;
+    --base-darken: #14181d;
+    --base-lighten: #393E46;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: var(--base);
+    color: var(--secondary);
+}
+div{
+    margin-bottom:30px;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--base); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--base-lighten); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#wrapper{
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+#status{
+    display: flex;
+    justify-content: space-between;
+}
+#active_tasks{
+    color: var(--primary);
+    font-weight: 700;
+}
+#warning{
+    display: none;
+    color:var(--primary-darken);
+    margin-bottom: 10px;
+}
+#input_field{
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    padding-left: 10px;
+    background-color: var(--base-lighten);
+    color:var(--secondary);
+}
+#input_field:focus{
+    outline: none;
+}
+
+#add_button{
+    width: 10%;
+    height: 40px;
+    background-color: var(--primary);
+    color: var(--base);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--base-lighten);
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.check{
+    cursor: pointer;
+}
+.delete{
+    cursor: pointer;
+}
+
+@media(max-width: 1200px){
+    #add_button{
+        width: 20%;
+    }
+}
+@media(max-width:900px){
+    #wrapper{
+        padding:1vh;
+        padding-top: 10vh;
+    }
+    #input_field{
+        width:60%;
+    }
+    #add_button{
+        width: 30%;
+        margin-left: 10px;
+    }
+}

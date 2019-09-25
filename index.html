@@ -5,8 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>ToDo | Web</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/8428adf31a.js"
+            crossorigin="anonymous"></script>
     </head>
     <body>
+        <div id="wrapper">
+            <div id="status">
+                <div id="details">
+                    <h1 id="day_date">Day, Date</h1>
+                    <p id="active_tasks"></p>
+                </div>
+            </div>
+            <h5 id="warning">Please do not enter empty string UWU</h5>
+            <div id="input-div">
+                <input type="text" name="input_task"
+                    placeholder="Enter a task..." id="input_field">
+                <button type="submit" id="add_button" onclick="addTask();">Add
+                    Task</button>
+            </div>
+            <div id="tasks_container">
+                <div class="line"></div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
 
     </body>
 </html>
