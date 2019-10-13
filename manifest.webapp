@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Putodo",
+  "launch_path": "index.html",
+  "description": "To do app",
+  "icons": {
+    "128": "assets/check.png"
+  },
+  "developer": {
+    "name": "Pupubird",
+    "url": "https://www.pupubird.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Putodo",
+      "description": "Just another worsen to-do app"
+    }
+  }
+}
