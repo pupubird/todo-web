@@ -4,22 +4,22 @@
   "icons": [
     {
       "src": "assets/check.svg",
-      "type": "image/png",
+      "type": "image/svg",
       "sizes": "128x128"
     },
     {
       "src": "assets/check.svg",
-      "type": "image/png",
+      "type": "image/svg",
       "sizes": "152x152"
     },
     {
       "src": "assets/check.svg",
-      "type": "image/png",
+      "type": "image/svg",
       "sizes": "144x144"
     },
     {
       "src": "assets/check.svg",
-      "type": "image/png",
+      "type": "image/svg",
       "sizes": "192x192"
     }
   ],

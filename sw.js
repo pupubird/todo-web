@@ -12,7 +12,8 @@ self.addEventListener('install', function (e) {
                 '/assets/check.svg',
                 '/assets/check.png',
                 '/css/style.css',
-                '/js/app.js'
+                '/js/app.js',
+                'https://kit.fontawesome.com/8428adf31a.js'
             ]);
         })
     );
