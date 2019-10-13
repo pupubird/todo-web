@@ -18,9 +18,14 @@
       "sizes": "144x144"
     },
     {
+      "src": "assets/check192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
       "src": "assets/check.svg",
       "type": "image/svg",
-      "sizes": "192x192"
+      "sizes": "512x512"
     }
   ],
   "start_url": "/?homescreen=1",

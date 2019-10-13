@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
   "name": "Putodo",
-  "launch_path": "index.html",
+  "launch_path": "/index.html",
   "description": "To do app",
   "icons": {
-    "128": "assets/check.png"
+    "128": "assets/check.svg"
   },
   "developer": {
     "name": "Pupubird",

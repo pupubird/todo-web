@@ -1,3 +1,4 @@
+document.body.requestFullscreen();
 document.getElementById('input_field').addEventListener('keypress', e => {
     var key = e.which || e.keyCode;
     if (key == 13) {
