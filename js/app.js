@@ -124,17 +124,18 @@ function display_taskCount() {
     task_count.innerText = getTasks() + ' Active Tasks';
 }
 function display_date() {
-    var day_date = document.getElementById('day_date');
-    var getD = new Date();
-    var day = getDayToString(getD);
-    day_date.innerText = day + ', '
-        + getD.getDay() + '/'
+    let day_date = document.getElementById('day_date');
+    let getD = new Date();
+    let today = getDayToString(getD.getDay());
+    day_date.innerText = today + ', '
+        + getD.getDate() + '/'
         + getD.getMonth() + '/'
         + getD.getFullYear();
 }
 
-function getDayToString(callback) {
-    switch (callback.getDay()) {
+function getDayToString(today) {
+    let day = '';
+    switch (today) {
         case 1:
             day = "Monday";
             break;
@@ -153,7 +154,7 @@ function getDayToString(callback) {
         case 6:
             day = "Saturday";
             break;
-        case 7:
+        case 0:
             day = "Sunday";
     }
     return day;
