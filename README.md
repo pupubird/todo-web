@@ -6,10 +6,8 @@ A todo web for refreshing web development skills
 
 1. go to [putodo.netlify.com](https://putodo.netlify.com/)
 
-![Go to link](assets/open-link.gif)
-
 2. Add to home screen and open
 
-![Open](assets/open-app.gif)
-
 Huala! Enjoy!
+
+![Open](assets/open-app.gif)
