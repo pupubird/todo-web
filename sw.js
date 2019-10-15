@@ -13,6 +13,7 @@ self.addEventListener('install', function (e) {
                 '/assets/check.png',
                 '/css/style.css',
                 '/js/app.js',
+                '/js/getday.js',
                 'https://kit.fontawesome.com/8428adf31a.js'
             ]);
         })
