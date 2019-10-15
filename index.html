@@ -40,7 +40,7 @@
         <div id="wrapper">
             <div id="status">
                 <div id="details">
-                    <h1 id="day_date">Day, Date</h1>
+                    <h1 id="day_date">Oops something went wrong</h1>
                     <p id="active_tasks"></p>
                 </div>
             </div>
@@ -219,7 +219,7 @@
             function display_date() {
                 let day_date = document.getElementById('day_date');
                 let getD = new Date();
-                let today = 'Not';
+                let today = getDayToString(getD.getDay());
                 day_date.innerText = today + ', '
                     + getD.getDate() + '/'
                     + getD.getMonth() + '/'
@@ -254,7 +254,7 @@
                 console.log('the day is: '+ day);
                 return 'Tuesday';
             }
-            display_date();
+            //display_date();
             display_taskCount();
         </script>
         <script>
