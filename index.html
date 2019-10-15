@@ -219,7 +219,7 @@
             function display_date() {
                 let day_date = document.getElementById('day_date');
                 let getD = new Date();
-                let today = getDayToString(getD.getDay());
+                let today = getDayToString(new Date().getDay());
                 day_date.innerText = today + ', '
                     + getD.getDate() + '/'
                     + getD.getMonth() + '/'
@@ -251,7 +251,7 @@
                         day = "Sunday";
                         break;
                 }
-                console.log('the day is: '+day);
+                console.log('the day is: '+ day);
                 return day;
             }
             display_date();
@@ -261,7 +261,7 @@
                 if ('serviceWorker' in navigator) {
                     navigator.serviceWorker
                         .register('/sw.js')
-                        .then(function () { console.log("Service Worker Registered"); });
+                        .then(function () { console.log("Service Worker Registered wtfs"); });
                 }
         </script>
     </body>
