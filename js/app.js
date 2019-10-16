@@ -1,4 +1,3 @@
-document.body.requestFullscreen();
 document.getElementById('input_field').addEventListener('keypress', e => {
     var key = e.which || e.keyCode;
     if (key == 13) {
@@ -29,6 +28,7 @@ if (!getDBtasks) {
 
 function addTask() {
     //get input
+    var timestamp = new Date().getTime()
     var input_field = document.getElementById('input_field');
     var warning = document.getElementById('warning');
     var task = input_field.value;
@@ -85,7 +85,6 @@ function task_append(task, composite_key) {
     let task_p = task_div.childNodes[1].childNodes[1].childNodes[3];
 
     if (getDBtasks) {
-        console.log(getDBtasks[composite_key]['status'] + " asd");
         let status = getDBtasks[composite_key]['status'];
         if (status === "checked") {
             checkbox.innerHTML = `<i class="far fa-check-circle"></i>`;
