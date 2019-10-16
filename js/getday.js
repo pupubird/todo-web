@@ -33,6 +33,6 @@ function getDayToString(today) {
             day = "Sunday";
             break;
     }
-    return 'Tuesday';
+    return day;
 }
 display_date();
